@@ -1,0 +1,18 @@
+# Puppet #
+
+This presenation format is attributed to [Joel Chippindale](git clone git://github.com/mocoso/showing-off-with-ruby.git)
+
+You can view this presentation if you install version 0.0.5 (or perhaps later) of the showoff gem.
+
+    $ gem install showoff
+    $ git clone tbd
+    $ cd puppet-at-audax
+    $ showoff serve
+
+And then open [http://localhost:9090](http://localhost:9090) in your browser
+
+Press 'p' to get the slides to change automatically every 20 seconds.
+
+This presentations is released under an [attribution and non-commercial Creative Commons License](http://creativecommons.org/licenses/by-nc/2.0/uk/).
+
+Peter Burkholder, April 2012.
