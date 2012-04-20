@@ -1,8 +1,8 @@
 [
   {"section":"title"},
-  {"section":"problem"},
-  {"section":"solution"},
-  {"section":"benefits"},
-  {"section":"howto"},
-  {"section":"close"}
+  {"section":"devops"},
+  {"section":"elements"},
+  {"section":"build"},
+  {"section":"deploy"},
+  {"section":"future"}
 ]
