@@ -9,19 +9,18 @@ $(function(){
 
 ![An image of Heinlein Puppet Master](puppetmaster.jpg "Tired of generic puppet images")
 
-<p>Image used under 'Fair Use'
-  <a rel="cc:attributionURL" href="http://www.flickr.com/photos/rappensuncle/">rappensuncle</a> 
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">(CC)</a></span></p>
-
 # The Puppet Masters of Audax #
 
 ## Peter Burkholder ##
 
-!SLIDE
+!SLIDE bullets incremental
 
-# Roadmap #
+# Outline #
 
-* Elements and Architecture
-* Building a Node
-* Deployments
-* Roadmap
+* Puppet and Configuration Management
+* Puppet@Audax
+* Agile Infrastructure
+* The Road Ahead
+
+.notes Please ask questions.  Agile INF only if time
+
