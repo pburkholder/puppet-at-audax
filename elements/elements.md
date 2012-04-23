@@ -10,7 +10,7 @@ evoluion of C.M.
 
 
 
-!SLIDE bullets incremental 
+!SLIDE incremental 
 
 # CM Generations #
 
@@ -26,7 +26,7 @@ taxonomy here.
 
 
 
-!SLIDE bullets incremental
+!SLIDE incremental
 
 # Infrastructure As Code #
 
@@ -61,7 +61,7 @@ manifests that were the used by CfEngine 2 -- a CM system for our CM system.
 
 
 
-!SLIDE 
+!SLIDE incremental
 
 # Declarative Language #
 
@@ -89,7 +89,7 @@ all of which would be 'imperative'.
 .notes The use of 'require' and 'subscribe' is part of what leads us to the
 next point:
 
-!SLIDE
+!SLIDE incremental
 
 # Idempotency #
 ## Same result on every run ##
@@ -100,7 +100,7 @@ next point:
 will always converge to the same state.  And they will take no action if the
 system is in the desired state
 
-!SLIDE bullets incremental
+!SLIDE incremental
 
 # Core Puppet Features #
 

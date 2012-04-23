@@ -17,7 +17,7 @@
 .notes Usually a RightScale instance ends with a run of puppet agent to
 complete configuring the host, but in this case we will watch it run.
 
-!SLIDE bullets incremental transition=fade
+!SLIDE incremental transition=fade
 
 # Bootstrapping: Agent Run #
 
@@ -31,7 +31,7 @@ complete configuring the host, but in this case we will watch it run.
 
 
 
-!SLIDE bullets incremental 
+!SLIDE incremental 
 
 # CV Deployments: initial run #
 
@@ -42,7 +42,7 @@ complete configuring the host, but in this case we will watch it run.
 
 
 
-!SLIDE bullets incremental 
+!SLIDE incremental 
 
 # CV Deployments: new release #
 
