@@ -1,8 +1,8 @@
 [
   {"section":"title"},
-  {"section":"devops"},
   {"section":"elements"},
-  {"section":"build"},
+  {"section":"inaction"},
   {"section":"deploy"},
   {"section":"future"}
+  {"section":"devops"},
 ]

@@ -33,8 +33,7 @@ taxonomy here.
 .notes Marc Burgess, Oslo.  CfEngine 2 had a lot of the features of a 3rd gen
 system but lacked a language rich enough to express all of the relationships
 in a system.  E.g., at NIH we used a Perl templating system to write the
-manifests that we're the used by CfEngine 2 -- a CM system for our CM system.
-
+manifests that were the used by CfEngine 2 -- a CM system for our CM system.
 
 
 
@@ -54,6 +53,8 @@ manifests that we're the used by CfEngine 2 -- a CM system for our CM system.
     package { $apache_package
       ensure  => 'present',
     }
+    # (Same for Window(TM) too)
+
 
 
 !SLIDE transition=fade
@@ -65,6 +66,9 @@ manifests that we're the used by CfEngine 2 -- a CM system for our CM system.
 > The apache.conf file should contain...
 
 > The apache service should be running
+
+.notes This is _not_ apt-get install, scp apache.conf, service apache start,
+all of which would be 'imperative'. 
 
 !SLIDE transition=fade
 
@@ -82,26 +86,27 @@ manifests that we're the used by CfEngine 2 -- a CM system for our CM system.
 
 !SLIDE
 
-# Convergence #
-
 # Idempotency #
+## Same result on every run ##
+# Convergence #
+## Structure resource dependencies so one run _converges_ to correct state ##
 
 .note Puppet _catalogs_ are _idempotent_: they can be run any number of times and
 will always converge to the same state.  And they will take no action if the
 systems is in the desired state
 
-!SLIDE 
+!SLIDE bullets incremental
 
-# Puppet Features #
+# Core Puppet Features #
 
 ## Written in Ruby ##
 ## External DSL ##
 ## Client/Server Model (master/agent) ##
+## Convergence via Acyclic Dependency Graph ##
+## Facts ##
 
 .notes The characteristics of Resource Abstraction, Declarative Language and
 Idempotency are common to CfEngine 3, Chef, Puppet and other 3rd Gen systems.
-Puppet's feature include:...  Also, Puppet works great in standalone mode
-
-
-
+Puppet's feature include:...  Also, Puppet works great in standalone mode.
+That said, let's hold off further discussion and see Puppet in action
 
