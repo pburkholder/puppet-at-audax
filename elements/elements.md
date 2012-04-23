@@ -5,11 +5,16 @@
 
 ## Third Generation Configuration Management
 
-!SLIDE bullets incremental transition=fade
+.notes To better illustrate what Puppet is and is not, a quick look at the
+evoluion of C.M.
+
+
+
+!SLIDE bullets incremental 
 
 # CM Generations #
 
-1. DIY, Provisioning, RDist, SSH-in-a-for-loop
+1. DIY, Provisioning, RDist, SSH-in-a-For-Loop
 1. Enterprise SiaFL: OpsWare, Bladelogic, Tivoli
 1. Infrastructure-as-Code
 
@@ -21,8 +26,7 @@ taxonomy here.
 
 
 
-
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # Infrastructure As Code #
 
@@ -43,13 +47,13 @@ manifests that were the used by CfEngine 2 -- a CM system for our CM system.
 # Resource Abstraction #
 ## Not This ##
 
-    @@@ bash
+    @@@ sh
     apt-get install apache2
     rpm -Uvh httpd
 
 ## But This ##
 
-    @@@ puppet
+    @@@ 
     package { $apache_package
       ensure  => 'present',
     }
@@ -57,15 +61,13 @@ manifests that were the used by CfEngine 2 -- a CM system for our CM system.
 
 
 
-!SLIDE transition=fade
+!SLIDE 
 
 # Declarative Language #
 
-> The apache2 package should be installed
-
-> The apache.conf file should contain...
-
-> The apache service should be running
+* The apache2 package should be installed
+* The apache.conf file should contain...
+* The apache service should be running
 
 .notes This is _not_ apt-get install, scp apache.conf, service apache start,
 all of which would be 'imperative'. 
@@ -74,7 +76,7 @@ all of which would be 'imperative'.
 
 # Declarative Language
 
-    @@@ puppet
+    @@@
     package{ 'apache':
       ensure  => 'latest',
     }
@@ -83,6 +85,9 @@ all of which would be 'imperative'.
       require   => Package['apache']
       subscribe => File['/etc/apache.conf']
     }
+
+.notes The use of 'require' and 'subscribe' is part of what leads us to the
+next point:
 
 !SLIDE
 
@@ -93,7 +98,7 @@ all of which would be 'imperative'.
 
 .note Puppet _catalogs_ are _idempotent_: they can be run any number of times and
 will always converge to the same state.  And they will take no action if the
-systems is in the desired state
+system is in the desired state
 
 !SLIDE bullets incremental
 
