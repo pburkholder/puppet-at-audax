@@ -2,7 +2,7 @@
 
 This presentation format is attributed to [Joel Chippindale](git clone git://github.com/mocoso/showing-off-with-ruby.git)
 
-[Title](title)
+[Title](./title)
 [Elements](elements)
 [In Action](inaction)
 [Features](features)
