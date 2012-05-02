@@ -9,6 +9,8 @@ This presentation format is attributed to [Joel Chippindale](git clone git://git
 * [Future](./future/future.md)
 * [DevOps](./devops/devops.md)
 
+I presented this as a lunchtime TechTalk on April 23, 2012, at AudaxHealth.  It went okay but I felt ShowOff was getting in my way more than ideal.  Also, structurally, I don't think I set up the problem space that C.M addresses. So the point of Puppet may have been lost a bit.
+
 You can view this presentation if you install version 0.0.5 (or perhaps later) of the showoff gem.
 
     $ gem install showoff
